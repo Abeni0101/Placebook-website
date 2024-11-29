@@ -18,11 +18,11 @@ body{
     content: '';
     position: absolute;
     inset: 0;
-    background-image: url(bg.jpg);
+    background-image: url(image/bg.jpg);
     background-size: cover;
     background-position: center;
     z-index: -1;
-    mask-image: url(ink_lv2.gif);
+    mask-image: url(image/ink_lv2.gif);
     mask-size: cover;
     mask-position: center;
 }
