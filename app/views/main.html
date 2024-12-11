@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media Dashboard</title>
+  <link rel="stylesheet" href="../../public/css/style.css">
+  <link rel="stylesheet" href="../../public/css/all.min.css">
+  
+</head>
+<body>
+  <div class="container">
+    <!-- Left Sidebar -->
+    <aside class="sidebar">
+        <!-- Profile Section -->
+        <div class="profile">
+          <img src="../../public/images/profile.jpg" alt="Profile">
+          <h3>Abenezer Birhanu</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Addis Ababa, Ethiopia</p>
+          <div class="stats">
+            <span>368<br><small>Posts</small></span>
+            <span>184.3K<br><small>Followers</small></span>
+            <span>1.04M<br><small>Following</small></span>
+          </div>
+        </div>
+      
+        <!-- Navigation Menu -->
+        <nav>
+          <ul>
+            <li class="active"><i class="fas fa-home"></i> Feed</li>
+            <a href="explore.html"><li><i class="fas fa-compass"></i> Explore</li></a>
+            <li><i class="fas fa-heart"></i> My Favorites</li>
+            <li><i class="fas fa-paper-plane"></i> Direct</li>
+          </ul>
+        </nav>
+
+        <div class="sidebar-footer">
+          <div class="logo"></div> 
+          <div class="site-name">Placebook</div>
+          <p>©2024</p>
+        </div>
+      </aside>
+      
+      
+      
+    <!-- Main Content -->
+    <main class="main-content">
+           <!-- Header Section or Content Title can go here if necessary -->
+           <div class="share-box">
+            <textarea class="share-textarea" placeholder="Based on your preferences, share your moments and experiences about places you've visited..."></textarea>
+            <div class="location-section">
+              <input type="text" id="location" class="location-input" placeholder="Enter a location..." />
+              <a href="#" id="google-map-link" class="location-btn" target="_blank">View on Google Maps</a>
+            </div>
+            <div class="upload-container">
+              <button class="upload-btn"><i class="fas fa-upload"> </i> Upload</button>
+            </div>
+          </div>
+      
+        <!-- Feeds Section -->
+        <div class="feeds">
+          <div class="post">
+            <div class="post-header">
+              <img src="user1.jpg" alt="User 1">
+              <div class="user-info">
+                <h4>Abenezer Birhanu</h4>
+                <span>@abenezerbirhanu</span>
+              </div>
+              <span class="post-time">2h ago</span>
+            </div>
+            <img src="../../public/images/post1.jpg" alt="Post Content">
+            <p>Easter Island lies 3,500km off the coast of Chile...</p>
+            <div class="post-footer">
+              <div class="actions">
+                <i class="fas fa-heart"></i> 1.6k
+                <i class="fas fa-comment"></i> 2.3k
+                <i class="fas fa-share"></i>
+              </div>
+              <div class="save">Save Post</div>
+            </div>
+          </div>
+      
+          <div class="post">
+            <div class="post-header">
+              <img src="user2.jpg" alt="User 2">
+              <div class="user-info">
+                <h4>Weyne Belachew</h4>
+                <span>@weynebelachew</span>
+              </div>
+              <span class="post-time">5h ago</span>
+            </div>
+            <img src="../../public/images/post2.jpg" alt="Post Content">
+            <p>Capturing the beautiful wildlife in the forest...</p>
+            <div class="post-footer">
+              <div class="actions">
+                <i class="fas fa-heart"></i> 2.1k
+                <i class="fas fa-comment"></i> 3.5k
+                <i class="fas fa-share"></i>
+                
+              </div>
+              <div class="save"><i class="fas fa-bookmark"></i>  Save Post</div>
+            </div>
+          </div>
+        </div>
+      </main>
+      
+
+    <!-- Right Sidebar -->
+    <aside class="right-sidebar">
+        <!-- Friend Requests Section -->
+        <div class="friend-requests">
+          <h4>Friend Requests</h4>
+          <!-- Request 1 -->
+          <div class="request">
+            <img src="profile1.jpg" alt="Abebe Kebede">
+            <div class="info">
+              <h5>Abebe Kebede</h5>
+              <span>Wants to add you as a friend</span>
+            </div>
+            <div class="actions">
+              <button class="accept"><i class="fas fa-check"></i></button>
+              <button class="decline"><i class="fas fa-"></i></button>
+            </div>
+          </div>
+          <!-- Request 2 -->
+          <div class="request">
+            <img src="profile2.jpg" alt="Brittni Landoma">
+            <div class="info">
+              <h5>Weyne Belachew</h5>
+              <span>Wants to add you as a friend</span>
+            </div>
+            <div class="actions">
+              <button class="accept">Accept</button>
+              <button class="decline">Decline</button>
+            </div>
+          </div>
+        </div>
+        
+        
+      
+        <!-- Suggestions for You -->
+        <div class="suggestions">
+          <h4>Suggestions for You</h4>
+          <ul>
+            <li>
+              <span>Abdulaziz Abdu</span>
+              <button>Add</button>
+            </li>
+            <li>
+              <span>Yeabsira Yabse</span>
+              <button>Add</button>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      
+  </div>
+<script src="../../public/js/script.js"></script>
+</body>
+</html>
