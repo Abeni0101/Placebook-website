@@ -1,0 +1,303 @@
+/* General modern styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #f4f6f9, #e8ecf3);
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Header Section */
+header {
+    
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+
+header .user-info img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #ffffff, #ecf3fc);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    
+}
+
+.dashboard-header h1 {
+    font-size: 1.75rem;
+    color: #333;
+}
+
+.dashboard-header .buttons button {
+    background: linear-gradient(135deg, #6a5acd, #7b68ee);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header .buttons button:hover {
+    background: linear-gradient(135deg, #5a4dcf, #6a5ae8);
+    transform: translateY(-2px);
+}
+
+.dashboard-header .buttons button:active {
+    transform: translateY(1px);
+}
+
+/* Cards Overview */
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.dashboard-cards .card {
+    background: linear-gradient(135deg, #ffffff, #eef2f7);
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dashboard-cards .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-cards .card i {
+    font-size: 1.9rem; /* Bigger size for dashboard icons */
+    color: #e23c0e; /* Matches the primary theme */
+    margin:0 .5rem 1rem 0; /* Space below the icon */
+}
+
+.dashboard-cards .card:hover i {
+    color: #c42e08; /* Darker accent on hover */
+    transform: scale(1.2); /* Slight zoom effect */
+}
+
+.dashboard-cards .card h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 0.75rem;
+}
+
+.dashboard-cards .card p {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+}
+
+/* Users List */
+.users-list {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    
+}
+
+.users-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+   
+    
+}
+
+.users-list table thead {
+    background-color: #f8fafc;
+    border-bottom: 2px solid #e0e4ea;
+    
+    
+}
+
+
+.users-list table th,
+.users-list table td {
+    text-align: left;
+    padding: 1rem;
+    border-bottom: 1px solid #e6e9ef;
+    font-size: 1rem;
+}
+
+.users-list table th {
+    color: #555;
+    font-weight: 700;
+}
+
+.users-list table tr {
+    transition: background 0.3s ease;
+}
+
+.users-list table tr:nth-child(even) {
+    background-color: #fafbfc;
+}
+
+.users-list table tr:hover {
+    background-color: #f1f5f9;
+    cursor: pointer;
+}
+
+.users-list table i {
+    font-size: 1.5rem;
+    color: #777;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.users-list table tr:hover i {
+    color: #4b49a3;
+    transform: scale(1.1);
+}
+
+/* Icon color changes for statuses */
+.status-active i {
+    color: #27ae60; /* Modern green for active */
+}
+
+.status-inactive i {
+    color: #e84118; /* Vibrant red for inactive */
+}
+
+.status-pending i {
+    color: #f1c40f; /* Bright yellow for pending */
+}
+
+/* Buttons */
+button {
+    background: linear-gradient(135deg, #6a5acd, #7b68ee);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #5a4dcf, #6a5ae8);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+.block-btn {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.block-btn:hover {
+    background-color: #c0392b;
+}
+
+.unblock-btn {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.unblock-btn:hover {
+    background-color: #27ae60;
+}
+
+/* Modal and User Details */
+.hidden {
+    display: none;
+}
+
+.modal {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #007bff #f4f4f4;
+    z-index: 0;
+    
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    
+    max-width: 600px;
+}
+
+.close {
+    background-color: #e74c3c; /* Red background */
+    color: white; /* White text */
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 30px; /* Rounded corners */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.close:hover {
+    background-color: #c0392b; /* Darker red on hover */
+    transform: translateY(-3px);
+
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.close:active {
+    background-color: #e74c3c; /* Maintain the original red when clicked */
+    transform: translateY(1px); /* Button presses down slightly */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow on click */
+}
+
+.hidden {
+    display: none;
+}
