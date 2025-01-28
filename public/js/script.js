@@ -62,3 +62,55 @@ document.getElementById('location').addEventListener('input', function() {
     mapLink.style.display = 'none'; // Hide the link if no location entered
   }
 });
+
+function postLocation(location) {
+  if (!location) {
+      alert('Location is not available.');
+      return;
+  }
+
+  const url = `https://www.google.com/maps/search/?q=${encodeURIComponent(location)}`;
+  console.log('Opening URL:', url); // Debugging line
+  window.open(url, '_blank');
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const commentToggles = document.querySelectorAll(".comment-toggle");
+
+  commentToggles.forEach(toggle => {
+    toggle.addEventListener("click", () => {
+      const post = toggle.closest(".post");
+      const commentBox = post.querySelector(".comment-box");
+
+      if (commentBox.style.display === "none" || !commentBox.style.display) {
+        commentBox.style.display = "block"; // Show the comment box
+      } else {
+        commentBox.style.display = "none"; // Hide the comment box
+      }
+    });
+  });
+
+  // Add new comment
+  document.querySelectorAll(".comment-submit").forEach(button => {
+    button.addEventListener("click", () => {
+      const commentBox = button.closest(".comment-box");
+      const input = commentBox.querySelector(".comment-input");
+      const commentsContainer = commentBox.querySelector(".comments");
+
+      if (input.value.trim() !== "") {
+        // Create a new comment bubble
+        const newComment = document.createElement("div");
+        newComment.classList.add("comment", "bubble");
+
+        newComment.innerHTML = `
+          <span class="comment-user">You</span>
+          <span class="comment-text">${input.value}</span>
+        `;
+
+        commentsContainer.appendChild(newComment);
+        input.value = ""; // Clear the input field
+      }
+    });
+  });
+});
+
