@@ -32,7 +32,7 @@ body {
     filter: brightness(0.9);
   }
   
-  .profile-info {
+  .profile-information {
     text-align: center;
     padding: 20px;
     position: relative;
@@ -48,7 +48,7 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   }
   
-  .profile-info h2 {
+  .profile-information h2 {
     margin: 15px 0 5px;
     font-size: 22px;
     font-weight: bold;
@@ -165,4 +165,82 @@ body {
       height: 120px;
     }
   }
+  #edit-profile-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  #edit-profile-modal .modal-content {
+    background: #fff;
+    width: 90%;
+    text-align: center;
+    max-width: 400px;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: slideDown 0.3s ease-out;
+  }
+
+  #edit-profile-modal h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+
+  #edit-profile-modal input[type="text"],
+  #edit-profile-modal input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
   
+
+  #edit-profile-modal button {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #edit-profile-modal button:hover {
+    background: #0056b3;
+  }
+
+  #edit-profile-modal .close-modal {
+    background: #ccc;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  #edit-profile-modal .close-modal:hover {
+    background: #999;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

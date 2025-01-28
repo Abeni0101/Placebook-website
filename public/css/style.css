@@ -204,209 +204,7 @@
   }
   
   /* Right Sidebar Enhancements */
-.right-sidebar {
-    background: linear-gradient(145deg, #ffffff, #f0f4ff); /* Soft gradient background */
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Modern shadow effect */
-    overflow-y: auto;
-    scrollbar-width: thin;
-    scrollbar-color: #4e8cff #e3e9ff;
-  }
-  
-  .right-sidebar h4 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    color: #333;
-    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
-  }
-  
-  .right-sidebar ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .right-sidebar ul li {
-    background: #ffffff;
-    margin-bottom: 15px;
-    padding: 10px 15px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05); 
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-  }
-  
-  .right-sidebar ul li:hover {
-    background: linear-gradient(145deg, #e0ebff, #ffffff);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); 
-  }
-  
-  .right-sidebar ul li span {
-    font-size: 14px;
-    font-weight: bold;
-    color: #007bff;
-    text-decoration: none;
-    transition: all 0.3s ease;
-  }
-  
-  .right-sidebar ul li span:hover {
-    color: #0056b3; /* Darker blue */
-    text-decoration: underline;
-  }
-  
-  /* Avatar in Suggestions */
-  .right-sidebar ul li::before {
-    content: '';
-    display: block;
-    width: 40px;
-    height: 40px;
-    background: #f4f4f4;
-    border-radius: 50%;
-    margin-right: 10px;
-    background-image: url('https://via.placeholder.com/40'); /* Placeholder avatar */
-    background-size: cover;
-    background-position: center;
-    flex-shrink: 0;
-  }
-  
-  /* "Suggestions for You" Cards */
-  .right-sidebar .suggestions {
-    background: #f9f9f9;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
-  }
-  
-  .right-sidebar .suggestions:hover {
-    transform: scale(1.02); 
-  }
-  
-  .right-sidebar .suggestions h4 {
-    margin-bottom: 10px;
-    font-size: 18px;
-    color: #333;
-  }
-  
-  .right-sidebar .suggestions ul li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .right-sidebar .suggestions ul li:last-child {
-    margin-bottom: 0;
-  }
-  
-  .right-sidebar .suggestions ul li span {
-    font-size: 14px;
-    color: #007bff;
-    margin-left: auto;
-  }
-  
-  /* Friend Request Section */
-.friend-requests {
-    background: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    max-height: 400px;
-    overflow-y: auto;
-    margin-bottom: 20px;
-  }
-  
-  .friend-requests h4 {
-    font-size: 18px;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 15px;
-  }
-  
-  .friend-requests .request {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 15px;
-    padding: 10px;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    transition: background 0.3s ease;
-    overflow: hidden; 
-  }
-  
-  .friend-requests .request:hover {
-    background-color: #f5f5f5;
-  }
-  
-  .friend-requests .request img {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    object-fit: cover;  /* Fix image overflow and distortion */
-    margin-right: 12px;
-  }
-  
-  .friend-requests .request .info {
-    flex: 1;
-    overflow: hidden;
-  }
-  
-  .friend-requests .request .info h5 {
-    font-size: 16px;
-    font-weight: 600;
-    margin: 0;
-    color: #333;
-  }
-  
-  .friend-requests .request .info span {
-    font-size: 14px;
-    color: #666;
-    display: block;
-    white-space: nowrap;  
-    text-overflow: ellipsis;
-    overflow: hidden;
-  }
-  
-  .friend-requests .request .actions {
-    display: flex;
-    gap: 10px;
-    flex-shrink: 0;
-  }
-  
-  .friend-requests .request .actions button {
-    padding: 6px 15px;
-    border: 1px solid transparent;
-    border-radius: 20px;
-    font-size: 14px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    color: #fff;
-    background: #4caf50;
-    border-color: #4caf50;
-    min-width: 80px;  
-  }
-  
-  .friend-requests .request .actions .decline {
-    background: #f44336;
-    border-color: #f44336;
-  }
-  
-  .friend-requests .request .actions button:hover {
-    opacity: 0.85;
-  }
-  
-  .friend-requests .request .actions .accept:hover {
-    background-color: #45a049;
-  }
-  
-  .friend-requests .request .actions .decline:hover {
-    background-color: #e53935;
-  }
+
   .sidebar-footer {
 /* Pushes footer to the bottom */
     text-align: center;
@@ -519,6 +317,7 @@
     border-radius: 15px;
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
+    
   }
   
   /* Share Box */
@@ -593,17 +392,43 @@
   background-color: #fff;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
+/* Hide the default file input */
+input[type="file"] {
+  display: none;
+}
+
+/* Style the label as a button */
+.file-label {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.file-label:hover {
+  background-color: #218838;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
 
 .location-btn {
   display: inline-block;
   text-align: center;
-  padding: 8px 20px;
+  border-radius: 8px;
+  padding: 10px 20px;
   margin-top: 5px;
   background-color: #28a745;
   color: white;
   text-decoration: none;
-  border-radius: 8px;
-  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
   font-family: 'Poppins', sans-serif;
   cursor: pointer;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
@@ -617,6 +442,9 @@
 /* Upload Button */
 .upload-container {
   text-align: right;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
 }
 
 .upload-btn {
@@ -708,7 +536,7 @@
     display: flex;
     gap: 15px;
     font-size: 16px;
-    color: #555;
+    color: #555 !important;
   }
   
   .main-content .feeds .post .post-footer .actions i {
@@ -721,7 +549,7 @@
   }
   
   .main-content .feeds .post .post-footer .save {
-    color: #007bff;
+    color: white;
     cursor: pointer;
     font-size: 14px;
     transition: all 0.3s ease;
@@ -729,9 +557,116 @@
   
   .main-content .feeds .post .post-footer .save:hover {
     color: #0056b3;
-    text-decoration: underline;
   }
+  
+  .save-btn {
+    
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
 
+.save-btn.save {
+  background: linear-gradient(to left, rgb(61, 75, 228),rgb(84, 164, 249));
+  color: white;
+}
+
+.save-btn.unsave {
+  background: linear-gradient(to left, rgb(228, 117, 61),rgb(223, 115, 85));
+  color: white; 
+}
+
+.save-btn:hover {
+    opacity: 0.8;
+}
+.unsave:hover {
+  color: rgb(255, 60, 0);
+}
+
+  .comment-box {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    color: #555;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .comments {
+    margin-bottom: 10px;
+  }
+  
+  .comment {
+    display: block;
+    width: auto;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    background-color: #e0e0e0;
+    border-radius: 15px;
+    position: relative;
+    max-width: 80%;
+    word-wrap: break-word;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .comment-user {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin:0 0 5px 0;
+  }
+  
+  .comment-text {
+    color: #555;
+  }
+  
+  .comment.bubble {
+    background-image: linear-gradient(to left, rgb(233 238 245), rgb(190 201 210));
+    color: #fff;
+    text-align: left;
+  }
+  
+  .comment-input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .comment-submit {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .comment-submit:hover {
+    background-color: #0056b3;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
   .tourism-place {
     position: relative;
     display: flex;
@@ -769,7 +704,7 @@
 /* Default Desktop Layout */
 .container {
     display: grid;
-    grid-template-columns: 250px auto 250px; /* Left Sidebar, Main Content, Right Sidebar */
+    grid-template-columns: 250px auto 150px; /* Left Sidebar, Main Content, Right Sidebar */
     gap: 20px;
   }
   
